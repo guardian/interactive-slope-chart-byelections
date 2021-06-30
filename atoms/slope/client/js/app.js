@@ -22,6 +22,7 @@ const svg = d3.select('.slope-svg-container')
 const graph = svg.append("g")
 const textsLeft = svg.append("g")
 const textsRight = svg.append("g")
+const years = svg.append("g")
 
 const xScale = d3.scalePoint()
 .domain([0,1])
@@ -157,11 +158,17 @@ d3.json('https://interactive.guim.co.uk/docsdata-test/1LUUgz8_HrjLy64FX-lGZ01tPf
 			.text(valuesRight[i].party)
 			.attr('fill' ,'#' + valuesRight[i].colour)
 			.attr('dx', '+0.5em')
-			
 
-		
 	})
 
+	years.selectAll("text")
+    .data([2019,2021])
+    .enter()
+    .append('text')
+    .attr('class', 'slope-year')
+    .attr("text-anchor", (d,i) => i == 0 ? "start" : 'end')
+    .attr("transform", (d, i) => `translate(${xScale(i)},${yScale(0) + 15})`)
+    .text(d => d);
 
 	if(window.resize)window.resize()
 
