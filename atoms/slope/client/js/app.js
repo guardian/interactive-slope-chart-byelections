@@ -38,7 +38,7 @@ const line = d3.line()
 
 
 //d3.json('<%= path %>/results.json')
-d3.json('https://interactive.guim.co.uk/docsdata-test/1LUUgz8_HrjLy64FX-lGZ01tPfETrsqsHt6lBDweQF9E.json')
+d3.json('https://interactive.guim.co.uk/docsdata/1LUUgz8_HrjLy64FX-lGZ01tPfETrsqsHt6lBDweQF9E.json')
 .then(data => {
 
 
