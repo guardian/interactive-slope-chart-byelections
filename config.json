@@ -1,5 +1,12 @@
 {
     "title": "interactive-slope-chart-byelections",
     "docData": "",
-    "path": "2021/06/slope-chart-byelections"
+    "path": "2021/12/bexley-byelection-slope-chart",
+    "previousEditions" : [
+        {
+            "title": "interactive-slope-chart-byelections",
+            "docData": "",
+            "path": "2021/06/slope-chart-byelections"
+        }
+    ]
 }

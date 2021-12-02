@@ -35,10 +35,11 @@ const line = d3.line()
 .x((d, i) => xScale(i))
 .y(yScale)
 
-
+// batley: https://interactive.guim.co.uk/docsdata/1LUUgz8_HrjLy64FX-lGZ01tPfETrsqsHt6lBDweQF9E.json
+// bexley:https://interactive.guim.co.uk/docsdata-test/12Hn0vMuhg7PRUNXClSWz_fW6TH3Kn1uixozxNxylmjU.json 
 
 //d3.json('<%= path %>/results.json')
-d3.json('https://interactive.guim.co.uk/docsdata/1LUUgz8_HrjLy64FX-lGZ01tPfETrsqsHt6lBDweQF9E.json')
+d3.json('https://interactive.guim.co.uk/docsdata-test/12Hn0vMuhg7PRUNXClSWz_fW6TH3Kn1uixozxNxylmjU.json')
 .then(data => {
 
 
