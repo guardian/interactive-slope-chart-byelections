@@ -48,9 +48,9 @@ d3.json('https://interactive.guim.co.uk/docsdata-test/12Hn0vMuhg7PRUNXClSWz_fW6T
 
 	console.log(results)
 
-	let headline = d3.select('.headline').html(results[0].headline)
+	// let headline = d3.select('.headline').html(results[0].headline)
 
-	let source = d3.select('.source').html(results[0].source)
+	// let source = d3.select('.source').html(results[0].source)
 
 	let allResults = [];
 
