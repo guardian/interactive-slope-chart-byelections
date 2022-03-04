@@ -7,7 +7,7 @@ const atomEl = d3.select('.slope-svg-container').node()
 const isMobile = window.matchMedia('(max-width: 600px)').matches;
 
 let width = atomEl.getBoundingClientRect().width;
-let height =  5 * width / 3 ;
+let height =  width ;
 
 console.log(height)
 
@@ -170,7 +170,7 @@ d3.json('https://interactive.guim.co.uk/docsdata-test/1VpcNjpFZsdo9-Ws8c5Ftg_StJ
     .append('text')
     .attr('class', 'slope-year')
     .attr("text-anchor", (d,i) => i == 0 ? "start" : 'end')
-    .attr("transform", (d, i) => `translate(${xScale(i)},${yScale(0) - 100})`)
+    .attr("transform", (d, i) => `translate(${xScale(i)},${yScale(0) - 3})`)
     .text(d => d);
 
 	if(window.resize)window.resize()
