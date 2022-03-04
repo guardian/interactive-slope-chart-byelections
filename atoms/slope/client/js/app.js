@@ -38,9 +38,10 @@ const line = d3.line()
 // batley: https://interactive.guim.co.uk/docsdata/1LUUgz8_HrjLy64FX-lGZ01tPfETrsqsHt6lBDweQF9E.json
 // bexley:https://interactive.guim.co.uk/docsdata-test/12Hn0vMuhg7PRUNXClSWz_fW6TH3Kn1uixozxNxylmjU.json 
 // north shropshire: https://interactive.guim.co.uk/docsdata-test/1zQtBC3ox_GZ3S0GjeEMPQjMBO40dvTS0w2zjZLB3xZQ.json
-
+// erdington: https://interactive.guim.co.uk/docsdata-test/1VpcNjpFZsdo9-Ws8c5Ftg_StJamillJjlxTwJEottWs.json
+//1VpcNjpFZsdo9-Ws8c5Ftg_StJamillJjlxTwJEottWs
 //d3.json('<%= path %>/results.json')
-d3.json('https://interactive.guim.co.uk/docsdata-test/1zQtBC3ox_GZ3S0GjeEMPQjMBO40dvTS0w2zjZLB3xZQ.json')
+d3.json('https://interactive.guim.co.uk/docsdata-test/1VpcNjpFZsdo9-Ws8c5Ftg_StJamillJjlxTwJEottWs.json')
 .then(data => {
 
 
@@ -164,12 +165,12 @@ d3.json('https://interactive.guim.co.uk/docsdata-test/1zQtBC3ox_GZ3S0GjeEMPQjMBO
 	})
 
 	years.selectAll("text")
-    .data([2019,2021])
+    .data([2019,2022])
     .enter()
     .append('text')
     .attr('class', 'slope-year')
     .attr("text-anchor", (d,i) => i == 0 ? "start" : 'end')
-    .attr("transform", (d, i) => `translate(${xScale(i)},${yScale(0) + 15})`)
+    .attr("transform", (d, i) => `translate(${xScale(i)},${yScale(0) - 100})`)
     .text(d => d);
 
 	if(window.resize)window.resize()
