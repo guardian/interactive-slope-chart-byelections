@@ -7,7 +7,7 @@ const atomEl = d3.select('.slope-svg-container').node()
 const isMobile = window.matchMedia('(max-width: 600px)').matches;
 
 let width = atomEl.getBoundingClientRect().width;
-let height =  5 * width / 3 ;
+let height =  0.6 * width;
 
 console.log(height)
 
@@ -38,9 +38,10 @@ const line = d3.line()
 // batley: https://interactive.guim.co.uk/docsdata/1LUUgz8_HrjLy64FX-lGZ01tPfETrsqsHt6lBDweQF9E.json
 // bexley:https://interactive.guim.co.uk/docsdata-test/12Hn0vMuhg7PRUNXClSWz_fW6TH3Kn1uixozxNxylmjU.json 
 // north shropshire: https://interactive.guim.co.uk/docsdata-test/1zQtBC3ox_GZ3S0GjeEMPQjMBO40dvTS0w2zjZLB3xZQ.json
-
 //d3.json('<%= path %>/results.json')
-d3.json('https://interactive.guim.co.uk/docsdata-test/1zQtBC3ox_GZ3S0GjeEMPQjMBO40dvTS0w2zjZLB3xZQ.json')
+var sheetpath = "https://interactive.guim.co.uk/docsdata-test/1NyLV2-ES0qVW3XJThtIXOlOqAMzGnC8VzaNEdVRWKtM.json"
+
+d3.json(sheetpath)
 .then(data => {
 
 
@@ -164,7 +165,7 @@ d3.json('https://interactive.guim.co.uk/docsdata-test/1zQtBC3ox_GZ3S0GjeEMPQjMBO
 	})
 
 	years.selectAll("text")
-    .data([2019,2021])
+    .data([2019,2022])
     .enter()
     .append('text')
     .attr('class', 'slope-year')

@@ -1,8 +1,14 @@
 {
     "title": "interactive-slope-chart-byelections",
     "docData": "",
-    "path": "2022/03/erdington-byelection-slope-chart",
+    "path": "2022/06/tiverton-byelection-slope-chart",
     "previousEditions" : [
+        {
+            "title": "interactive-slope-chart-byelections",
+            "docData": "",
+            "path": "2022/03/erdington-byelection-slope-chart",
+            "note" : "erdington is on a branch bcos slightly different to the others"
+        },
         {
             "title": "interactive-slope-chart-byelections",
             "docData": "",
