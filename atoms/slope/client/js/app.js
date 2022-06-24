@@ -7,7 +7,7 @@ const atomEl = d3.select('.slope-svg-container').node()
 const isMobile = window.matchMedia('(max-width: 600px)').matches;
 
 let width = atomEl.getBoundingClientRect().width;
-let height =  5 * width / 3 ;
+let height = 0.6 * width;
 
 console.log(height)
 
@@ -40,7 +40,10 @@ const line = d3.line()
 // north shropshire: https://interactive.guim.co.uk/docsdata-test/1zQtBC3ox_GZ3S0GjeEMPQjMBO40dvTS0w2zjZLB3xZQ.json
 
 //d3.json('<%= path %>/results.json')
-d3.json('https://interactive.guim.co.uk/docsdata-test/1zQtBC3ox_GZ3S0GjeEMPQjMBO40dvTS0w2zjZLB3xZQ.json')
+
+var dataurl = "https://interactive.guim.co.uk/docsdata-test/1h6LWMxTnL7h1hw0ge7iUpOSOZXA9X6DueckIhpIaj2o.json"
+
+d3.json('https://interactive.guim.co.uk/docsdata-test/1h6LWMxTnL7h1hw0ge7iUpOSOZXA9X6DueckIhpIaj2o.json')
 .then(data => {
 
 

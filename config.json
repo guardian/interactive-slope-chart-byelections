@@ -1,8 +1,13 @@
 {
     "title": "interactive-slope-chart-byelections",
     "docData": "",
-    "path": "2022/03/erdington-byelection-slope-chart",
+    "path": "2022/06/wakefield-byelection-slope-chart",
     "previousEditions" : [
+        {
+            "title": "interactive-slope-chart-byelections",
+            "docData": "",
+            "path": "2022/03/erdington-byelection-slope-chart"
+        },
         {
             "title": "interactive-slope-chart-byelections",
             "docData": "",
