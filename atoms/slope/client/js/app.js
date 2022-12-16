@@ -41,9 +41,10 @@ const line = d3.line()
 
 //d3.json('<%= path %>/results.json')
 
-var dataurl = "https://interactive.guim.co.uk/docsdata-test/1h6LWMxTnL7h1hw0ge7iUpOSOZXA9X6DueckIhpIaj2o.json"
+//wakefield: "https://interactive.guim.co.uk/docsdata-test/1h6LWMxTnL7h1hw0ge7iUpOSOZXA9X6DueckIhpIaj2o.json"
+var dataurl = "https://interactive.guim.co.uk/docsdata-test/1whk8uNa1QpT3HdLWM4EOxk8q4zLHZKBMnzyAbu7T0RE.json"
 
-d3.json('https://interactive.guim.co.uk/docsdata-test/1h6LWMxTnL7h1hw0ge7iUpOSOZXA9X6DueckIhpIaj2o.json')
+d3.json(dataurl)
 .then(data => {
 
 
@@ -167,7 +168,7 @@ d3.json('https://interactive.guim.co.uk/docsdata-test/1h6LWMxTnL7h1hw0ge7iUpOSOZ
 	})
 
 	years.selectAll("text")
-    .data([2019,2021])
+    .data([2019,2022])
     .enter()
     .append('text')
     .attr('class', 'slope-year')
